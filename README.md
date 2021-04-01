@@ -4,9 +4,10 @@
 
 > Trendvices is a twitter bot that you should follow for your daily dose of tech news, tips and advice. Built with ruby
 
-![Trendvices Tweets](./trendvices.png)
+![Trendvices Tweets](./trendvices.gif)
 
 These are some example posts from the Trendvices Bot!
+**This project has no live-demo since it requires authentication and tweeting too frequently could result in a temporary block**
 
 
 ## Built With
@@ -15,10 +16,6 @@ These are some example posts from the Trendvices Bot!
 - Unique gems: twitter, bitly, httparty, nokogiri
 - Twitter Dev Tools
 - Bitly Dev Tools
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
