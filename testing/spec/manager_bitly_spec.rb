@@ -14,7 +14,7 @@ module Trendvices
       end
 
       it 'Should ALWAYS return a shortened URL with a length of 22 characters, independant of the URL' do
-        expect(manager_bitly.shorten_url('https://github.com/fernandorpm').length).to eql(bitly_manager.shorten_url('https://github.com/microverseinc').length)
+        expect(manager_bitly.shorten_url('https://github.com/fernandorpm').length).to eql(manager_bitly.shorten_url('https://github.com/microverseinc').length)
       end
     end
   end
