@@ -6,6 +6,7 @@ GEM
     bitly (2.0.1)
       oauth2 (>= 0.5.0, < 2.0)
     buftok (0.2.0)
+    diff-lcs (1.4.4)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
@@ -54,6 +55,19 @@ GEM
     racc (1.5.2)
     rack (2.2.3)
     rake (13.0.3)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.2)
     ruby2_keywords (0.0.4)
     simple_oauth (0.3.1)
     thread_safe (0.3.6)
@@ -79,6 +93,7 @@ DEPENDENCIES
   bitly
   httparty
   nokogiri
+  rspec
   twitter
 
 BUNDLED WITH
