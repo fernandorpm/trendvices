@@ -13,7 +13,7 @@ These are some example posts from the Trendvices Bot!
 ## Built With
 
 - Ruby
-- Unique gems: twitter, bitly, httparty, nokogiri
+- Unique gems: rspec, twitter, bitly, httparty, nokogiri
 - Twitter Dev Tools
 - Bitly Dev Tools
 
@@ -134,6 +134,7 @@ end
 ### Install
 
 If you want to make sure that all of the gems used are included (to avoid any errors later on):
+- `gem install rspec`
 - `gem install twitter`
 - `gem install bitly`
 - `gem install httparty`
