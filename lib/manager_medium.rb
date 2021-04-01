@@ -12,13 +12,10 @@ module Trendvices
     end
 
     def scrape
-      article_type = %w[programming productivity relationships].sample
-
-      unparsed_page = HTTParty.get("https://medium.com/topic/#{article_type}")
-      parsed_page ||= Nokogiri::HTML(unparsed_page.body)
+      parsed_page = medium_parsed_page
 
       loop do
-        article_number = Random.rand(9)
+        article_number = select_article
 
         @title = parsed_page.css('section > div > div > div > h3')[article_number].text
 
@@ -29,6 +26,23 @@ module Trendvices
 
         break unless @author.include? '<!--'
       end
+    end
+
+    private
+
+    def select_topic
+      %w[programming productivity relationships].sample
+    end
+
+    def select_article
+      Random.rand(9)
+    end
+
+    def medium_parsed_page
+      article_type = select_topic
+
+      unparsed_page = HTTParty.get("https://medium.com/topic/#{article_type}")
+      Nokogiri::HTML(unparsed_page.body)
     end
   end
 end

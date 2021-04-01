@@ -2,7 +2,7 @@
 
 # Trendvices
 
-> Trendvices is a twitter bot that you should follow for your daily dose of tech news, tips and advice. Built with ruby
+> Trendvices is a twitter bot that you should follow for your daily dose of tech news, tips, and advice. Built with ruby
 
 ![Trendvices Tweets](./trendvices.gif)
 
@@ -153,7 +153,7 @@ To install the gems from the Gemfile:
 
 ### Usage
 
-Creating a robot for twitter that is able to scrap data. It can be changed to interact with twitter in many different ways. Please refer to the [Twitter Developer Documentation](https://developer.twitter.com/en/docs)
+This robot's usage is about interacting with twitter while scrapping data in many different ways. If you want to better understand how it can be used, please refer to the [Twitter Developer Documentation](https://developer.twitter.com/en/docs)
 
 ### Run
 
@@ -162,10 +162,10 @@ On the folder/directory of the project:
 
 ### Test
 
-In order to run the tests, first you have to have the rspec gem installed in your PC.
+To run the tests, first, you have to have the rspec gem installed on your PC.
 For that, run `gem install rspec`
 
-Then you can check if the rspec was succesfully installed by running `rspec --version`.
+Then you can check if the rspec was successfully installed by running `rspec --version`.
 
 Finally, just as for the previous steps, you have to go to the project location on your computer.
 

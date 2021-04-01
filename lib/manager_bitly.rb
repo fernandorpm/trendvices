@@ -8,11 +8,17 @@ module Trendvices
     end
 
     def shorten_url(url)
-      client = Bitly::API::Client.new(token: @bitly_auth.access_token)
+      client = connect
 
       bitlink = client.shorten(long_url: url)
 
       bitlink.link
+    end
+
+    private
+
+    def connect
+      Bitly::API::Client.new(token: @bitly_auth.access_token)
     end
   end
 end
