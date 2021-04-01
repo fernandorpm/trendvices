@@ -12,7 +12,7 @@ module Trendvices
     end
 
     def scrape
-      article_type = %w[programming productivity relationships].sample
+      article_type = self.select_topic
 
       unparsed_page = HTTParty.get("https://medium.com/topic/#{article_type}")
       parsed_page ||= Nokogiri::HTML(unparsed_page.body)
@@ -29,6 +29,13 @@ module Trendvices
 
         break unless @author.include? '<!--'
       end
+
+      private
+
+      def select_topic
+        return %w[programming productivity relationships].sample
+      end
+
     end
   end
 end

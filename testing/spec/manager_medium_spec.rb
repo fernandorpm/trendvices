@@ -5,7 +5,7 @@ module Trendvices
     let(:manager_medium) { ManagerMedium.new }
 
     describe '#scrape' do
-      # TITLE =======================================================
+
       it 'Should return a decently sized Title' do
         manager_medium.scrape
         expect(manager_medium.title.length).to be > 8
@@ -16,7 +16,6 @@ module Trendvices
         expect(manager_medium.title).to_not eq('')
       end
 
-      # AUTHOR ======================================================
       it 'Should return a decently sized Author name' do
         manager_medium.scrape
         expect(manager_medium.author.length).to be > 5
@@ -32,7 +31,6 @@ module Trendvices
         expect(manager_medium.author).to_not include('<!--')
       end
 
-      # URL =========================================================
       it 'Should return a URL from the Medium Website' do
         manager_medium.scrape
         expect(manager_medium.url).to include('medium.com')
